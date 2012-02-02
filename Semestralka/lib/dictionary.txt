@@ -1,0 +1,261 @@
+html
+version
+lang
+dir ltr rtl
+/
+head
+lang
+dir ltr rtl
+/
+title
+lang
+dir ltr rtl
+/
+meta
+http-equiv
+name
+lang
+content
+scheme
+/
+style
+type text/css
+media screen tty tv projection handheld print braille aural all
+/
+link
+rel stylesheet
+type text/css
+href
+/
+body
+text
+background
+bgcolor
+link
+vlink
+alink
+onload
+onunload
+lang
+dir ltr rtl
+style
+id
+class
+/
+b
+class
+id
+style
+title
+/
+i
+class
+id
+style
+title
+/
+u
+class
+id
+style
+title
+/
+br
+class
+id
+style
+title
+/
+h1
+id
+class
+style
+align left right center justify
+/
+h2
+id
+class
+style
+align left right center justify
+/
+h3
+id
+class
+style
+align left right center justify
+/
+h4
+id
+class
+style
+align left right center justify
+/
+h5
+id
+class
+style
+align left right center justify
+/
+h6
+id
+class
+style
+align left right center justify
+/
+p
+class
+id
+style
+align left right center justify
+/
+a
+href
+class
+style
+title
+/
+img
+src
+alt
+align top bottom middle left right
+border
+height
+width
+/
+div
+align left right center justify
+class
+id
+style
+title
+/
+form
+action
+method GET POST
+target
+/
+input
+type button checkbox file hidden image password radio reset submit text
+value
+src
+size
+name
+maxlength
+checked checked
+alt
+/
+select
+name
+size
+disabled disabled
+multiple multiple
+/
+option
+value
+selected selected
+disabled disabled
+/
+table
+summary
+width
+align left center right
+border
+cellpadding
+cellspacing
+frame void above below hsides lhs rhs vsides box border
+rules none groups rows cols all
+/
+caption
+align left right top bottom
+style
+/
+tr
+align right left center justify char
+bgcolor
+valign top middle bottom baseline
+/
+th
+align left right center justify char
+colspan
+rowspan
+nowrap nowrap
+width
+height
+valign top middle bottom baseline
+/
+td
+align left right center justify char
+colspan
+rowspan
+nowrap nowrap
+width
+height
+valign top middle bottom baseline
+/
+thead
+align left right center justify char
+valign top middle bottom baseline
+class
+id
+style
+/
+tbody
+align left right center justify char
+valign top middle bottom baseline
+class
+id
+style
+/
+tfoot
+align left right center justify char
+valign top middle bottom baseline
+class
+id
+style
+/
+ul
+type disc square circle
+/
+ol
+type 1 A a I i
+start
+/
+li
+value
+//
+html head body
+head title meta style link
+title
+style
+meta *
+link *
+body b i u br h1 h2 h3 h4 h5 h6 p a img div input select table ul ol form
+b
+i
+u
+br *
+h1
+h2
+h3
+h4
+h5
+h6
+p b i u br a img input select table ul ol form
+a
+img *
+div p b i u br a img input select table ul ol h1 h2 h3 h4 h5 h6 form
+form input select
+input *
+select option
+option
+table caption tr thead tbody tfoot
+caption
+tr td th
+td b i u
+th b i u
+thead tr
+tbody tr
+tfoot tr
+ul li
+ol li
+li

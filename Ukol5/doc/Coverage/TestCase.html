@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Coverage::TestCase</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/testcase_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/testcase.rb">lib/testcase.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-find_segment">#find_segment</a></li>
+					
+					<li><a href="#method-i-get_segments">#get_segments</a></li>
+					
+					<li><a href="#method-i-resolve">#resolve</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Coverage.html">Coverage</a></li>
+				
+					<li><a href="../Coverage/Segment.html">Coverage::Segment</a></li>
+				
+					<li><a href="../Coverage/TestCase.html">Coverage::TestCase</a></li>
+				
+					<li><a href="../ComplexTestMinimalCoverage.html">ComplexTestMinimalCoverage</a></li>
+				
+					<li><a href="../Program.html">Program</a></li>
+				
+					<li><a href="../UnitTestMinimalCoverage.html">UnitTestMinimalCoverage</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Coverage::TestCase</h1>
+
+		<div id="description">
+			<p>
+Trida pro reprezentaci konkretniho ukolu pokryti dane vzdalenosti mnozinou
+usecek
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="segments-attribute-method" class="method-detail">
+				<a name="segments"></a>
+				
+				<a name="segments="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">segments</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Pole instanci tridy <a href="Segment.html">Segment</a>, pomoci nichz se ma
+usecka pokryt
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(lineLength)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Konstruktor, ktery nastavuje delku pokryvane cary a vytvari prazdne pole
+segmentu, pomoci nichz se bude pokryvat
+</p>
+<ul>
+<li><p>
+lineLength - delka pokryvane cary
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/testcase.rb, line 12</span>
+12:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">lineLength</span>)
+13:       <span class="ruby-ivar">@lineLength</span> = <span class="ruby-identifier">lineLength</span>
+14:       <span class="ruby-ivar">@segments</span> = []
+15:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="find-segment-method" class="method-detail ">
+				<a name="method-i-find_segment"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find_segment</span><span
+						class="method-args">(start)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda hledajici nejvhodnejsi usecku k pokryti
+</p>
+<ul>
+<li><p>
+start - zacatek pokryvane oblasti
+</p>
+</li>
+</ul>
+<p>
+Vraci hledany segment, nebo -1, pokud se zadny vhodny kandidat nenasel.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="find-segment-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/testcase.rb, line 33</span>
+33:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find_segment</span>(<span class="ruby-identifier">start</span>)
+34:       <span class="ruby-identifier">segment</span>, <span class="ruby-identifier">max</span> = <span class="ruby-value">1</span>, <span class="ruby-identifier">start</span>
+35:       <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">s</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> 
+36:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">li</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">ri</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">ri</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">max</span>
+37:           <span class="ruby-identifier">segment</span> = <span class="ruby-identifier">i</span>
+38:           <span class="ruby-identifier">max</span> = <span class="ruby-identifier">s</span>.<span class="ruby-identifier">ri</span>
+39:         <span class="ruby-keyword kw">end</span>
+40:       }
+41:       <span class="ruby-identifier">segment</span>
+42:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-segments-method" class="method-detail ">
+				<a name="method-i-get_segments"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_segments</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda, ktera cte cast zadani ze standardniho vstupu a vytvari jednotlive
+segmenty k pokryti pozadovane vzdalenosti.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-segments-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/testcase.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_segments</span>
+19:       <span class="ruby-keyword kw">while</span> <span class="ruby-value">1</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+20:         <span class="ruby-identifier">ends</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">' '</span>)
+21:         <span class="ruby-identifier">li</span>, <span class="ruby-identifier">ri</span> = <span class="ruby-identifier">ends</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">ends</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">to_i</span>
+22:         <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">li</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">ri</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+23:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">li</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ri</span>
+24:           <span class="ruby-identifier">li</span>, <span class="ruby-identifier">ri</span> = <span class="ruby-identifier">ends</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">ends</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_i</span>
+25:         <span class="ruby-keyword kw">end</span>
+26:         <span class="ruby-ivar">@segments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Segment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">li</span>, <span class="ruby-identifier">ri</span>)
+27:       <span class="ruby-keyword kw">end</span>
+28:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="resolve-method" class="method-detail ">
+				<a name="method-i-resolve"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">resolve</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda hledajici reseni daneho <a href="TestCase.html">TestCase</a>. Ze
+zadanych usecek vybira nejmensi podmnozinu, ktera pokryva urcenou
+vzdalenost.  Vraci pole segmentu, resici danou ulohu.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="resolve-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/testcase.rb, line 46</span>
+46:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">resolve</span>
+47:       <span class="ruby-identifier">distance_covered</span> = <span class="ruby-value">0</span>
+48:       <span class="ruby-identifier">segments_used</span> = []
+49:       <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">distance_covered</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@lineLength</span>
+50:         <span class="ruby-identifier">segment</span> = <span class="ruby-identifier">find_segment</span>(<span class="ruby-identifier">distance_covered</span>)
+51:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">segment</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+52:           <span class="ruby-identifier">puts</span> <span class="ruby-value">0</span>
+53:           <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+54:           <span class="ruby-keyword kw">return</span> []
+55:         <span class="ruby-keyword kw">end</span>
+56:         <span class="ruby-identifier">segments_used</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@segments</span>[<span class="ruby-identifier">segment</span>]
+57:         <span class="ruby-identifier">distance_covered</span> = <span class="ruby-ivar">@segments</span>[<span class="ruby-identifier">segment</span>].<span class="ruby-identifier">ri</span>
+58:       <span class="ruby-keyword kw">end</span>
+59:       <span class="ruby-identifier">puts</span> <span class="ruby-identifier">segments_used</span>.<span class="ruby-identifier">length</span>
+60:       <span class="ruby-identifier">segments_used</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">segment</span><span class="ruby-operator">|</span> 
+61:         <span class="ruby-identifier">segment</span>.<span class="ruby-identifier">print_coordinates</span>
+62:       }
+63:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+64:       <span class="ruby-identifier">segments_used</span>
+65:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

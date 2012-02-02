@@ -1,0 +1,9 @@
+<html version="5">
+	<head><title> nadpis </title></head> 
+
+	<body>
+            <div styl&e="nejakyStyl">text
+            <br />
+            </div>
+	</body> 
+</html>

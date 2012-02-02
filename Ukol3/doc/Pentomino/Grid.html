@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Pentomino::Grid</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/grid_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/grid.rb">lib/grid.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-check_grid">#check_grid</a></li>
+					
+					<li><a href="#method-i-check_space">#check_space</a></li>
+					
+					<li><a href="#method-i-compare">#compare</a></li>
+					
+					<li><a href="#method-i-get_neighbours">#get_neighbours</a></li>
+					
+					<li><a href="#method-i-insert">#insert</a></li>
+					
+					<li><a href="#method-i-put_piece">#put_piece</a></li>
+					
+					<li><a href="#method-i-remove">#remove</a></li>
+					
+					<li><a href="#method-i-show">#show</a></li>
+					
+					<li><a href="#method-i-translate">#translate</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="../Pentomino/Grid.html">Pentomino::Grid</a></li>
+				
+					<li><a href="../Pentomino/Piece.html">Pentomino::Piece</a></li>
+				
+					<li><a href="../Program.html">Program</a></li>
+				
+					<li><a href="../TestPentomino.html">TestPentomino</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Pentomino::Grid</h1>
+
+		<div id="description">
+			<p>
+Trida reprezentujici hraci plochu
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="solutions-attribute-method" class="method-detail">
+				<a name="solutions"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">solutions</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Atribut zaznamenavajici pocet nalezenych reseni
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="grid-attribute-method" class="method-detail">
+				<a name="grid"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">grid</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+2D pole reprezentujici hraci plochu (atribut pro cteni kvuli testovani)
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(width, height, types)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Konstruktor, ktera vytvari hraci plochu, nastavuje typy pouzitych kostek a
+inicializuje nektere instancni promenne.
+</p>
+<ul>
+<li><p>
+width - delka hraci plochy
+</p>
+</li>
+<li><p>
+height - sirka hraci plochy
+</p>
+</li>
+<li><p>
+types - pole s typy pouzivanych kostek
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 16</span>
+16:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>, <span class="ruby-identifier">types</span>)
+17:       <span class="ruby-ivar">@width</span>, <span class="ruby-ivar">@height</span>, <span class="ruby-ivar">@types</span> = <span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>, <span class="ruby-identifier">types</span>
+18:       <span class="ruby-ivar">@grid</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@height</span>) {<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>, <span class="ruby-value str">&quot;.&quot;</span>)}
+19:       <span class="ruby-ivar">@symbol</span> = <span class="ruby-value">48</span> <span class="ruby-comment cmt"># 48.chr =&gt; '0'</span>
+20:       <span class="ruby-ivar">@start</span> = <span class="ruby-keyword kw">false</span>
+21:       <span class="ruby-ivar">@solutions</span> = <span class="ruby-value">0</span>
+22:       <span class="ruby-ivar">@solutions_array</span> = []
+23:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="check-grid-method" class="method-detail ">
+				<a name="method-i-check_grid"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">check_grid</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda kontrolujici obsazeni hraci plochy. Signalizuje nalezeni reseni,
+nebo vynechani volneho mista. Pripadne vynechani nezaplnitelneho mista a
+tedy slepou vypocetni vetev.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="check-grid-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/grid.rb, line 160</span>
+160:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">check_grid</span>
+161:       <span class="ruby-identifier">covered</span> = <span class="ruby-value">0</span>
+162:       <span class="ruby-ivar">@width</span>.<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> 
+163:         <span class="ruby-ivar">@height</span>.<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span> 
+164:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span>][<span class="ruby-identifier">x</span>] <span class="ruby-operator">==</span> <span class="ruby-value str">'.'</span>
+165:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">get_neighbours</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>)
+166:               <span class="ruby-keyword kw">return</span> <span class="ruby-value">1</span>
+167:             <span class="ruby-keyword kw">end</span>
+168:             <span class="ruby-identifier">covered</span> = <span class="ruby-value">1</span>
+169:           <span class="ruby-keyword kw">end</span>
+170:         }
+171:       }
+172:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">covered</span>
+173:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="check-space-method" class="method-detail ">
+				<a name="method-i-check_space"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">check_space</span><span
+						class="method-args">(x, y, square_array)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda kontrolujici, jestli jsou jednotliva pole, kam se ma kostka vlozit,
+volna.
+</p>
+<ul>
+<li><p>
+x - x-ova souradnice pole
+</p>
+</li>
+<li><p>
+y - y-ova souradnice pole
+</p>
+</li>
+<li><p>
+square_array - pole s vyctem souradnic hraci plochy, kam se ma kostka
+umistit
+</p>
+</li>
+</ul>
+<p>
+Vraci false, pokud se kostka na dane misto nevejde a true pokud je mozno ji
+vlozit.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="check-space-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 80</span>
+80:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">check_space</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">square_array</span>)   
+81:       <span class="ruby-identifier">square_array</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span> 
+82:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@width</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@height</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">1</span>]][<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">0</span>]] <span class="ruby-operator">!=</span> <span class="ruby-value str">'.'</span>
+83:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+84:         <span class="ruby-keyword kw">end</span>
+85:       }
+86:       <span class="ruby-keyword kw">true</span>
+87:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="compare-method" class="method-detail ">
+				<a name="method-i-compare"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">compare</span><span
+						class="method-args">(actual)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda porovnavajici jednotliva reseni pro vylouceni duplicity.
+</p>
+<ul>
+<li><p>
+actual - pole reprezentujici aktualni nalezene reseni
+</p>
+</li>
+</ul>
+<p>
+Vraci true, pokud se aktualni reseni shoduje s nekterym jiz drive nalezenym
+a false, pokud je jine, nez vsechny dosud nalezene.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="compare-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 66</span>
+66:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">compare</span>(<span class="ruby-identifier">actual</span>)
+67:       <span class="ruby-ivar">@solutions_array</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> 
+68:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">translate</span>(<span class="ruby-identifier">actual</span>))
+69:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+70:         <span class="ruby-keyword kw">end</span>
+71:       }
+72:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+73:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-neighbours-method" class="method-detail ">
+				<a name="method-i-get_neighbours"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_neighbours</span><span
+						class="method-args">(x, y)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda kontrolujici obsazenost sousednich poli nalezeneho pole o
+souradnicich x a y. 
+</p>
+<ul>
+<li><p>
+x - x-ova souradnice pole
+</p>
+</li>
+<li><p>
+y - y-ova souradnice pole
+</p>
+</li>
+</ul>
+<p>
+Vraci true, pokud volne pole nema okolo sebe zadne jine volne pole (takove
+pole uz pak nelze zaplnit zadnou kostkou, takze se jedna o slepou vypocetni
+vetev) a false, pokud pole ma nejakeho nezaplneneho souseda.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-neighbours-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/grid.rb, line 137</span>
+137:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_neighbours</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>)
+138:       <span class="ruby-identifier">neighbours</span> = []
+139:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+140:         <span class="ruby-identifier">neighbours</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span>][<span class="ruby-identifier">x</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>]
+141:       <span class="ruby-keyword kw">end</span>
+142:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@width</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+143:         <span class="ruby-identifier">neighbours</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span>][<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>]
+144:       <span class="ruby-keyword kw">end</span>
+145:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+146:         <span class="ruby-identifier">neighbours</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>][<span class="ruby-identifier">x</span>]
+147:       <span class="ruby-keyword kw">end</span>
+148:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@height</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+149:         <span class="ruby-identifier">neighbours</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>][<span class="ruby-identifier">x</span>]
+150:       <span class="ruby-keyword kw">end</span>
+151:       <span class="ruby-identifier">neighbours</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span> 
+152:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">square</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'.'</span>
+153:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+154:         <span class="ruby-keyword kw">end</span>
+155:       }
+156:       <span class="ruby-keyword kw">true</span>
+157:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="insert-method" class="method-detail ">
+				<a name="method-i-insert"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">insert</span><span
+						class="method-args">(x, y, piece)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro vkladani kostky na danou souradnici. Na urcena mista hraciho
+pole nakopiruje symbol pro pouzitou kostku.
+</p>
+<ul>
+<li><p>
+x - x-ova souradnice pole
+</p>
+</li>
+<li><p>
+y - y-ova souradnice pole
+</p>
+</li>
+<li><p>
+piece - instance tridy <a href="Piece.html">Piece</a>, ktera reprezentuje
+vkladanou kostku
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="insert-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 29</span>
+29:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">insert</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">piece</span>)
+30:       <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">square_array</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span>
+31:         <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">1</span>]][<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">0</span>]] = <span class="ruby-ivar">@symbol</span>.<span class="ruby-identifier">chr</span>
+32:       }
+33:       <span class="ruby-ivar">@symbol</span> = <span class="ruby-ivar">@symbol</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+34:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="put-piece-method" class="method-detail ">
+				<a name="method-i-put_piece"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">put_piece</span><span
+						class="method-args">(x, y, type, orientation)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Stezejni metoda pro reseni ulohy. Resi kompletni mechanismus vkladani
+kostky daneho typu s danou orientaci na urcene souradnice hraci plochy.
+</p>
+<ul>
+<li><p>
+x - x-ova souradnice pole
+</p>
+</li>
+<li><p>
+y - y-ova souradnice pole
+</p>
+</li>
+<li><p>
+type - typ vkladane kostky
+</p>
+</li>
+<li><p>
+orientation - orientace vkladane kostky
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="put-piece-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/grid.rb, line 94</span>
+ 94:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">put_piece</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">orientation</span>)
+ 95:       <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">type</span>, <span class="ruby-identifier">orientation</span>)
+ 96:     
+ 97:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">check_space</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">square_array</span>) 
+ 98:         <span class="ruby-keyword kw">return</span>
+ 99:       <span class="ruby-keyword kw">end</span>
+100:     
+101:       <span class="ruby-identifier">insert</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">piece</span>)
+102: 
+103:       <span class="ruby-identifier">free_square</span> = <span class="ruby-identifier">check_grid</span>
+104:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">free_square</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+105:         <span class="ruby-identifier">actual</span> = []
+106:         <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span> 
+107:           <span class="ruby-identifier">row</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span> 
+108:             <span class="ruby-identifier">actual</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">square</span>
+109:           }
+110:         }  
+111:         <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">compare</span>(<span class="ruby-identifier">actual</span>)
+112:           <span class="ruby-ivar">@solutions</span> = <span class="ruby-ivar">@solutions</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+113:           <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;SOLUTION #{@solutions}&quot;</span>
+114:         
+115:           <span class="ruby-ivar">@solutions_array</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">translate</span>(<span class="ruby-identifier">actual</span>)
+116:           <span class="ruby-identifier">show</span>
+117:         <span class="ruby-keyword kw">end</span>
+118:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">free_square</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+119:         (<span class="ruby-ivar">@width</span>).<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> 
+120:           (<span class="ruby-ivar">@height</span>).<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">y</span><span class="ruby-operator">|</span> 
+121:             <span class="ruby-ivar">@types</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">type</span><span class="ruby-operator">|</span> 
+122:               <span class="ruby-constant">Piece</span><span class="ruby-operator">::</span><span class="ruby-constant">ORIENTATIONS</span>[<span class="ruby-identifier">type</span>].<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">orientation</span><span class="ruby-operator">|</span> 
+123:                 <span class="ruby-identifier">put_piece</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">orientation</span>)
+124:               }
+125:             }
+126:           }
+127:         }
+128:       <span class="ruby-keyword kw">end</span>
+129:     
+130:       <span class="ruby-identifier">remove</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">piece</span>)
+131:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="remove-method" class="method-detail ">
+				<a name="method-i-remove"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">remove</span><span
+						class="method-args">(x, y, piece)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro odebirani kostky z dane souradnice. Z urcenych mist hraciho pole
+vymaze symbol pro pouzitou kostku.
+</p>
+<ul>
+<li><p>
+x - x-ova souradnice pole
+</p>
+</li>
+<li><p>
+y - y-ova souradnice pole
+</p>
+</li>
+<li><p>
+piece - instance tridy <a href="Piece.html">Piece</a>, ktera reprezentuje
+odebiranou kostku
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="remove-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 40</span>
+40:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">remove</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>, <span class="ruby-identifier">piece</span>)
+41:       <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">square_array</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">square</span><span class="ruby-operator">|</span>
+42:         <span class="ruby-ivar">@grid</span>[<span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">1</span>]][<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">square</span>[<span class="ruby-value">0</span>]] = <span class="ruby-value str">'.'</span>
+43:       }
+44:       <span class="ruby-ivar">@symbol</span> = <span class="ruby-ivar">@symbol</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+45:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-method" class="method-detail ">
+				<a name="method-i-show"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro vypis hraci plochy
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="show-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/grid.rb, line 176</span>
+176:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
+177:       <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">row</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> 
+178:         <span class="ruby-identifier">row</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">cell</span>, <span class="ruby-identifier">j</span><span class="ruby-operator">|</span> 
+179:           <span class="ruby-identifier">print</span> <span class="ruby-identifier">cell</span>, <span class="ruby-value str">&quot; &quot;</span>
+180:         }
+181:         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+182:       }
+183:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+184:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="translate-method" class="method-detail ">
+				<a name="method-i-translate"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">translate</span><span
+						class="method-args">(solution)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro preklad reseni do &#8220;normalni formy&#8221; pro kontrolu
+duplicitnich reseni.
+</p>
+<ul>
+<li><p>
+solution - pole s reprezentaci aktualniho nalezeneho reseni
+</p>
+</li>
+</ul>
+<p>
+Vraci reseni v &#8220;normalni forme&#8221;.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="translate-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/grid.rb, line 50</span>
+50:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">translate</span>(<span class="ruby-identifier">solution</span>)
+51:       <span class="ruby-identifier">translation</span> = {}
+52:       <span class="ruby-identifier">symbol</span> = <span class="ruby-value">48</span>
+53:       <span class="ruby-identifier">solution</span>.<span class="ruby-identifier">each_with_index</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>  
+54:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">translation</span>[<span class="ruby-identifier">item</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+55:           <span class="ruby-identifier">translation</span>[<span class="ruby-identifier">item</span>] = <span class="ruby-identifier">symbol</span>.<span class="ruby-identifier">chr</span>
+56:           <span class="ruby-identifier">symbol</span> = <span class="ruby-identifier">symbol</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+57:         <span class="ruby-keyword kw">end</span>
+58:         <span class="ruby-identifier">solution</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">translation</span>[<span class="ruby-identifier">item</span>]
+59:       }
+60:       <span class="ruby-identifier">solution</span>
+61:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

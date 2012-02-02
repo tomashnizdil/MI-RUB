@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: TestPentomino</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/unit_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/unit_test.rb">test/unit_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-grid_resolve">#grid_resolve</a></li>
+					
+					<li><a href="#method-i-setup">#setup</a></li>
+					
+					<li><a href="#method-i-test_check_grid">#test_check_grid</a></li>
+					
+					<li><a href="#method-i-test_check_space">#test_check_space</a></li>
+					
+					<li><a href="#method-i-test_complex">#test_complex</a></li>
+					
+					<li><a href="#method-i-test_get_neighbours">#test_get_neighbours</a></li>
+					
+					<li><a href="#method-i-test_insert">#test_insert</a></li>
+					
+					<li><a href="#method-i-test_piece">#test_piece</a></li>
+					
+					<li><a href="#method-i-test_remove">#test_remove</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="./Pentomino/Grid.html">Pentomino::Grid</a></li>
+				
+					<li><a href="./Pentomino/Piece.html">Pentomino::Piece</a></li>
+				
+					<li><a href="./Program.html">Program</a></li>
+				
+					<li><a href="./TestPentomino.html">TestPentomino</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">TestPentomino</h1>
+
+		<div id="description">
+			<p>
+Trida pro testovani ulohy <a href="Pentomino.html">Pentomino</a> Solver
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="grid-resolve-method" class="method-detail ">
+				<a name="method-i-grid_resolve"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">grid_resolve</span><span
+						class="method-args">(width, height, types)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Testovaci metoda spoustena z metody test_complex. Slouzi ke spusteni
+komplexniho reseni ulohy <a href="Pentomino.html">Pentomino</a>.  Vraci
+pocet nalezenych reseni
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="grid-resolve-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 76</span>
+76:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">grid_resolve</span>(<span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>, <span class="ruby-identifier">types</span>)
+77:     <span class="ruby-identifier">grid</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Grid</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">width</span>, <span class="ruby-identifier">height</span>, <span class="ruby-identifier">types</span>)
+78:     <span class="ruby-identifier">types</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">type</span><span class="ruby-operator">|</span> 
+79:       <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span><span class="ruby-operator">::</span><span class="ruby-constant">ORIENTATIONS</span>[<span class="ruby-identifier">type</span>].<span class="ruby-identifier">times</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">orientation</span><span class="ruby-operator">|</span>
+80:         <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">put_piece</span>(<span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">orientation</span>) 
+81:       }
+82:     }
+83:     <span class="ruby-identifier">grid</span>.<span class="ruby-identifier">solutions</span>
+84:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setup-method" class="method-detail ">
+				<a name="method-i-setup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setup</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda, ktera se vola pred kazdym testem. Vytvari instanci tridy Grid a
+nekolik instanci tridy Piece, s nimiz se pak v kazdem testu pracuje.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="setup-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 8</span>
+ 8:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setup</span>
+ 9:     <span class="ruby-ivar">@grid</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Grid</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>, <span class="ruby-value">5</span>, [<span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-value">3</span>, <span class="ruby-value">4</span>, <span class="ruby-value">5</span>, <span class="ruby-value">6</span>, <span class="ruby-value">7</span>, <span class="ruby-value">8</span>, <span class="ruby-value">9</span>, <span class="ruby-value">10</span>, <span class="ruby-value">11</span>])
+10:     <span class="ruby-ivar">@piece_l</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">5</span>)
+11:     <span class="ruby-ivar">@piece_p</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">4</span>, <span class="ruby-value">2</span>)
+12:     <span class="ruby-ivar">@piece_v</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">7</span>, <span class="ruby-value">3</span>)
+13:     <span class="ruby-ivar">@piece_x</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">9</span>, <span class="ruby-value">0</span>)
+14:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-check-grid-method" class="method-detail ">
+				<a name="method-i-test_check_grid"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_check_grid</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test metody check_grid tridy Grid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-check-grid-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 59</span>
+59:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_check_grid</span>
+60:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_x</span>)
+61:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_grid</span>)
+62:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_x</span>)
+63:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_l</span>)
+64:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-value">2</span>, <span class="ruby-ivar">@piece_l</span>)
+65:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_grid</span>)
+66:     <span class="ruby-identifier">piece_l2</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">7</span>)
+67:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">piece_l2</span>)
+68:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-value">2</span>, <span class="ruby-identifier">piece_l2</span>)
+69:     <span class="ruby-identifier">piece_i</span> = <span class="ruby-constant">Pentomino</span><span class="ruby-operator">::</span><span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>)
+70:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">0</span>, <span class="ruby-value">4</span>, <span class="ruby-identifier">piece_i</span>)
+71:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_grid</span>)
+72:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-check-space-method" class="method-detail ">
+				<a name="method-i-test_check_space"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_check_space</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test metody check_space tridy Grid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-check-space-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 44</span>
+44:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_check_space</span>
+45:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_p</span>)
+46:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">true</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_space</span>(<span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_l</span>.<span class="ruby-identifier">square_array</span>))
+47:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">false</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_space</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_l</span>.<span class="ruby-identifier">square_array</span>))
+48:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">true</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">check_space</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_v</span>.<span class="ruby-identifier">square_array</span>))
+49:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex-method" class="method-detail ">
+				<a name="method-i-test_complex"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy <a href="Pentomino.html">Pentomino</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 87</span>
+87:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex</span>
+88:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">4</span>, <span class="ruby-identifier">grid_resolve</span>(<span class="ruby-value">5</span>, <span class="ruby-value">4</span>, [<span class="ruby-value">2</span>]))
+89:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">grid_resolve</span>(<span class="ruby-value">5</span>, <span class="ruby-value">3</span>, [<span class="ruby-value">9</span>]))
+90:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">grid_resolve</span>(<span class="ruby-value">1</span>, <span class="ruby-value">10</span>, [<span class="ruby-value">1</span>]))
+91:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">16</span>, <span class="ruby-identifier">grid_resolve</span>(<span class="ruby-value">4</span>, <span class="ruby-value">5</span>, [<span class="ruby-value">0</span>, <span class="ruby-value">3</span>, <span class="ruby-value">6</span>, <span class="ruby-value">7</span>, <span class="ruby-value">10</span>, <span class="ruby-value">11</span>]))
+92:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-get-neighbours-method" class="method-detail ">
+				<a name="method-i-test_get_neighbours"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_get_neighbours</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test metody get_neighbours tridy Grid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-get-neighbours-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 52</span>
+52:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_get_neighbours</span>
+53:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">2</span>, <span class="ruby-value">2</span>, <span class="ruby-ivar">@piece_x</span>)
+54:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">true</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">get_neighbours</span>(<span class="ruby-value">4</span>, <span class="ruby-value">4</span>))
+55:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">false</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">get_neighbours</span>(<span class="ruby-value">2</span>, <span class="ruby-value">2</span>))
+56:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-insert-method" class="method-detail ">
+				<a name="method-i-test_insert"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_insert</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test metody insert tridy Grid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-insert-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 25</span>
+25:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_insert</span>
+26:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_p</span>)
+27:     <span class="ruby-identifier">grid_expected</span> = [[<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'0'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'0'</span>, <span class="ruby-value str">'0'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'0'</span>, <span class="ruby-value str">'0'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>]]
+28:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">grid_expected</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">grid</span>)
+29:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-piece-method" class="method-detail ">
+				<a name="method-i-test_piece"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_piece</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test vytvareni jednotlivych kostek
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-piece-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 17</span>
+17:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_piece</span>
+18:     <span class="ruby-identifier">assert_equal</span>([[<span class="ruby-value">0</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">2</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">3</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">3</span>, <span class="ruby-value">1</span>]], <span class="ruby-ivar">@piece_l</span>.<span class="ruby-identifier">square_array</span>)
+19:     <span class="ruby-identifier">assert_equal</span>([[<span class="ruby-value">1</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">0</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">0</span>, <span class="ruby-value">2</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">2</span>]], <span class="ruby-ivar">@piece_p</span>.<span class="ruby-identifier">square_array</span>)
+20:     <span class="ruby-identifier">assert_equal</span>([[<span class="ruby-value">0</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">2</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">0</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">0</span>, <span class="ruby-value">2</span>]], <span class="ruby-ivar">@piece_v</span>.<span class="ruby-identifier">square_array</span>)
+21:     <span class="ruby-identifier">assert_equal</span>([[<span class="ruby-value">1</span>, <span class="ruby-value">0</span>], [<span class="ruby-value">0</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">2</span>, <span class="ruby-value">1</span>], [<span class="ruby-value">1</span>, <span class="ruby-value">2</span>]], <span class="ruby-ivar">@piece_x</span>.<span class="ruby-identifier">square_array</span>)
+22:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-remove-method" class="method-detail ">
+				<a name="method-i-test_remove"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_remove</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test metody remove tridy Grid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-remove-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 32</span>
+32:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_remove</span>
+33:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_p</span>)
+34:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">insert</span>(<span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_l</span>)
+35:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-value">2</span>, <span class="ruby-value">1</span>, <span class="ruby-ivar">@piece_p</span>)
+36:     <span class="ruby-identifier">grid_expected</span> = [[<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'1'</span>, <span class="ruby-value str">'1'</span>, <span class="ruby-value str">'1'</span>, <span class="ruby-value str">'1'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'1'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>]]
+37:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">grid_expected</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">grid</span>)
+38:     <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-ivar">@piece_l</span>)
+39:     <span class="ruby-identifier">grid_expected</span> = [[<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>], [<span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>, <span class="ruby-value str">'.'</span>]]
+40:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">grid_expected</span>, <span class="ruby-ivar">@grid</span>.<span class="ruby-identifier">grid</span>)
+41:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: TestUnit</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/unit_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/unit_test.rb">test/unit_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-parse">#parse</a></li>
+					
+					<li><a href="#method-i-test_complex1">#test_complex1</a></li>
+					
+					<li><a href="#method-i-test_complex10">#test_complex10</a></li>
+					
+					<li><a href="#method-i-test_complex11">#test_complex11</a></li>
+					
+					<li><a href="#method-i-test_complex2">#test_complex2</a></li>
+					
+					<li><a href="#method-i-test_complex3">#test_complex3</a></li>
+					
+					<li><a href="#method-i-test_complex4">#test_complex4</a></li>
+					
+					<li><a href="#method-i-test_complex5">#test_complex5</a></li>
+					
+					<li><a href="#method-i-test_complex6">#test_complex6</a></li>
+					
+					<li><a href="#method-i-test_complex7">#test_complex7</a></li>
+					
+					<li><a href="#method-i-test_complex8">#test_complex8</a></li>
+					
+					<li><a href="#method-i-test_complex9">#test_complex9</a></li>
+					
+					<li><a href="#method-i-test_dictionary">#test_dictionary</a></li>
+					
+					<li><a href="#method-i-test_nodes">#test_nodes</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./lib/dictionary_txt.html">dictionary.txt</a></li>
+				
+					<li class="file"><a href="./nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+					<li class="file"><a href="./output_txt.html">output.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile1_txt.html">testfile1.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile10_txt.html">testfile10.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile11_txt.html">testfile11.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile2_txt.html">testfile2.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile3_txt.html">testfile3.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile4_txt.html">testfile4.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile5_txt.html">testfile5.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile6_txt.html">testfile6.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile7_txt.html">testfile7.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile8_txt.html">testfile8.txt</a></li>
+				
+					<li class="file"><a href="./test/testfile9_txt.html">testfile9.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./HTML_Parser.html">HTML_Parser</a></li>
+				
+					<li><a href="./HTML_Parser/DOM_Nodes.html">HTML_Parser::DOM_Nodes</a></li>
+				
+					<li><a href="./HTML_Parser/DOM_Nodes/Attribute.html">HTML_Parser::DOM_Nodes::Attribute</a></li>
+				
+					<li><a href="./HTML_Parser/DOM_Nodes/Tag.html">HTML_Parser::DOM_Nodes::Tag</a></li>
+				
+					<li><a href="./HTML_Parser/DOM_Nodes/Text.html">HTML_Parser::DOM_Nodes::Text</a></li>
+				
+					<li><a href="./HTML_Parser/Dictionary.html">HTML_Parser::Dictionary</a></li>
+				
+					<li><a href="./HTML_Parser/Parser.html">HTML_Parser::Parser</a></li>
+				
+					<li><a href="./HTML_Parser/Printer.html">HTML_Parser::Printer</a></li>
+				
+					<li><a href="./TestUnit.html">TestUnit</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">TestUnit</h1>
+
+		<div id="description">
+			<p>
+Trida pro testovani html parseru
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="parse-method" class="method-detail ">
+				<a name="method-i-parse"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse</span><span
+						class="method-args">(parser)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro parsovani vstupu pro potreby metody test_complex.
+</p>
+<ul>
+<li><p>
+parser - instance tridy <a
+href="HTML_Parser/Parser.html">HTML_Parser::Parser</a>, jejiz metodu parse
+ma tato metoda nahradit
+</p>
+</li>
+</ul>
+<p>
+Vyhazuje vyjimky v pripade spatne utvoreneho dokumentu. V pripade dobre
+utvoreneho dokumentu vraci koren stromove struktury.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="parse-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 53</span>
+53:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+54:     <span class="ruby-keyword kw">while</span> <span class="ruby-operator">!</span><span class="ruby-identifier">parser</span>.<span class="ruby-identifier">eof?</span>
+55:       <span class="ruby-identifier">parser</span>.<span class="ruby-identifier">parse_char</span>(<span class="ruby-identifier">parser</span>.<span class="ruby-identifier">readchar</span>)
+56:     <span class="ruby-keyword kw">end</span>
+57:     <span class="ruby-identifier">parser</span>.<span class="ruby-identifier">root</span>
+58:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex1"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex1</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#1)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 61</span>
+61:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex1</span>
+62:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile1.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+63:     <span class="ruby-keyword kw">begin</span>
+64:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+65:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+66:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>     
+67:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected tag mark '&lt;abc&gt;' within null context.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+68:     <span class="ruby-keyword kw">end</span>
+69:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex10"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex10</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#10)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 160</span>
+160:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex10</span>
+161:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile10.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+162:     <span class="ruby-keyword kw">begin</span>
+163:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+164:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+165:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+166:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Bad tag pairing near '&lt;/head&gt;'.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+167:     <span class="ruby-keyword kw">end</span>
+168:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex11"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex11</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#11)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 171</span>
+171:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex11</span>
+172:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile11.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+173:     <span class="ruby-keyword kw">begin</span>
+174:       <span class="ruby-identifier">root</span> = <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+175:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>, <span class="ruby-identifier">root</span>.<span class="ruby-identifier">class</span>)
+176:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;html&quot;</span>, <span class="ruby-identifier">root</span>.<span class="ruby-identifier">name</span>)
+177:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">1</span>, <span class="ruby-identifier">root</span>.<span class="ruby-identifier">attributes</span>.<span class="ruby-identifier">length</span>)
+178:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value">2</span>, <span class="ruby-identifier">root</span>.<span class="ruby-identifier">children</span>.<span class="ruby-identifier">length</span>)
+179:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+180:       <span class="ruby-identifier">puts</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>
+181:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+182:     <span class="ruby-keyword kw">end</span>
+183:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex2"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex2</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#2)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 72</span>
+72:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex2</span>
+73:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile2.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+74:     <span class="ruby-keyword kw">begin</span>
+75:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+76:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+77:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+78:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unknown tag mark '&lt;abc&gt;' within '&lt;title&gt;' context.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+79:     <span class="ruby-keyword kw">end</span>
+80:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex3"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex3</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#3)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 83</span>
+83:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex3</span>
+84:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile3.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+85:     <span class="ruby-keyword kw">begin</span>
+86:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+87:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+88:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+89:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected tag mark '&lt;i&gt;' within '&lt;head&gt;' context.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+90:     <span class="ruby-keyword kw">end</span>
+91:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex4"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex4</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#4)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 94</span>
+ 94:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex4</span>
+ 95:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile4.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+ 96:     <span class="ruby-keyword kw">begin</span>
+ 97:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+ 98:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+ 99:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+100:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected attribute 'neznamyAtribut' within '&lt;body&gt;' context.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+101:     <span class="ruby-keyword kw">end</span>
+102:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex5"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex5</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#5)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 105</span>
+105:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex5</span>
+106:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile5.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+107:     <span class="ruby-keyword kw">begin</span>
+108:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+109:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+110:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+111:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected value 'doprava' of attribute 'align' within '&lt;h1&gt;' context.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+112:     <span class="ruby-keyword kw">end</span>
+113:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex6"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex6</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#6)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 116</span>
+116:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex6</span>
+117:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile6.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+118:     <span class="ruby-keyword kw">begin</span>
+119:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+120:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+121:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+122:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected character ',' while expecting '&lt;'.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+123:     <span class="ruby-keyword kw">end</span>
+124:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex7"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex7</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#7)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 127</span>
+127:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex7</span>
+128:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile7.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+129:     <span class="ruby-keyword kw">begin</span>
+130:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+131:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+132:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+133:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unclosed unpaired tag '&lt;br&gt;'.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+134:     <span class="ruby-keyword kw">end</span>
+135:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex8"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex8</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#8)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 138</span>
+138:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex8</span>
+139:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile8.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+140:     <span class="ruby-keyword kw">begin</span>
+141:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+142:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+143:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+144:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected character '*' in opening tag mark near 'di'.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+145:     <span class="ruby-keyword kw">end</span>
+146:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-complex--method" class="method-detail ">
+				<a name="method-i-test_complex9"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_complex9</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Komplexni test ulohy HTML parser (#9)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-complex--source">
+<pre>
+     <span class="ruby-comment cmt"># File test/unit_test.rb, line 149</span>
+149:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_complex9</span>
+150:     <span class="ruby-identifier">parser</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Parser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;test/testfile9.txt&quot;</span>, <span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+151:     <span class="ruby-keyword kw">begin</span>
+152:       <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parser</span>)
+153:       <span class="ruby-identifier">fail</span> <span class="ruby-value str">&quot;Unexpected no exception!&quot;</span>
+154:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+155:       <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Unexpected character '&amp;' in attribute name near 'styl'.&quot;</span>, <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>)
+156:     <span class="ruby-keyword kw">end</span>
+157:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-dictionary-method" class="method-detail ">
+				<a name="method-i-test_dictionary"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_dictionary</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test vytvareni slovniku
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-dictionary-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 11</span>
+11:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_dictionary</span>
+12:     <span class="ruby-identifier">dictionary</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">Dictionary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;lib/dictionary.txt&quot;</span>)
+13:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;head&quot;</span>, <span class="ruby-value str">&quot;body&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-value str">&quot;html&quot;</span>])
+14:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;b&quot;</span>, <span class="ruby-value str">&quot;i&quot;</span>, <span class="ruby-value str">&quot;u&quot;</span>, <span class="ruby-value str">&quot;br&quot;</span>, <span class="ruby-value str">&quot;a&quot;</span>, <span class="ruby-value str">&quot;img&quot;</span>, <span class="ruby-value str">&quot;input&quot;</span>, <span class="ruby-value str">&quot;select&quot;</span>, <span class="ruby-value str">&quot;table&quot;</span>, <span class="ruby-value str">&quot;ul&quot;</span>, <span class="ruby-value str">&quot;ol&quot;</span>, <span class="ruby-value str">&quot;form&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-value str">&quot;p&quot;</span>])
+15:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;caption&quot;</span>, <span class="ruby-value str">&quot;tr&quot;</span>, <span class="ruby-value str">&quot;thead&quot;</span>, <span class="ruby-value str">&quot;tbody&quot;</span>, <span class="ruby-value str">&quot;tfoot&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-value str">&quot;table&quot;</span>])
+16:     <span class="ruby-identifier">assert_equal</span>([], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-value str">&quot;title&quot;</span>])
+17:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-value str">&quot;br&quot;</span>])
+18:     
+19:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;version&quot;</span>, <span class="ruby-value str">&quot;lang&quot;</span>, <span class="ruby-value str">&quot;dir&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-value str">&quot;html&quot;</span>])
+20:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;summary&quot;</span>, <span class="ruby-value str">&quot;width&quot;</span>, <span class="ruby-value str">&quot;align&quot;</span>, <span class="ruby-value str">&quot;border&quot;</span>, <span class="ruby-value str">&quot;cellpadding&quot;</span>, <span class="ruby-value str">&quot;cellspacing&quot;</span>, <span class="ruby-value str">&quot;frame&quot;</span>, <span class="ruby-value str">&quot;rules&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-value str">&quot;table&quot;</span>])
+21:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;type&quot;</span>, <span class="ruby-value str">&quot;value&quot;</span>, <span class="ruby-value str">&quot;src&quot;</span>, <span class="ruby-value str">&quot;size&quot;</span>, <span class="ruby-value str">&quot;name&quot;</span>, <span class="ruby-value str">&quot;maxlength&quot;</span>, <span class="ruby-value str">&quot;checked&quot;</span>, <span class="ruby-value str">&quot;alt&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-value str">&quot;input&quot;</span>])
+22:     
+23:     <span class="ruby-identifier">assert_equal</span>([], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">values</span>[[<span class="ruby-value str">&quot;img&quot;</span>, <span class="ruby-value str">&quot;src&quot;</span>]])
+24:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-value str">&quot;1&quot;</span>, <span class="ruby-value str">&quot;A&quot;</span>, <span class="ruby-value str">&quot;a&quot;</span>, <span class="ruby-value str">&quot;I&quot;</span>, <span class="ruby-value str">&quot;i&quot;</span>], <span class="ruby-identifier">dictionary</span>.<span class="ruby-identifier">values</span>[[<span class="ruby-value str">&quot;ol&quot;</span>, <span class="ruby-value str">&quot;type&quot;</span>]])
+25:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-nodes-method" class="method-detail ">
+				<a name="method-i-test_nodes"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_nodes</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test jednotlivych uzlu stromove struktury
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-nodes-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 28</span>
+28:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_nodes</span>
+29:     <span class="ruby-identifier">root</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;A&quot;</span>, <span class="ruby-keyword kw">true</span>, <span class="ruby-keyword kw">nil</span>)
+30:     <span class="ruby-identifier">tag1</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;B&quot;</span>, <span class="ruby-keyword kw">true</span>, <span class="ruby-identifier">root</span>)
+31:     <span class="ruby-identifier">tag2</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;C&quot;</span>, <span class="ruby-keyword kw">true</span>, <span class="ruby-identifier">root</span>)
+32:     <span class="ruby-identifier">tag3</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;D&quot;</span>, <span class="ruby-keyword kw">true</span>, <span class="ruby-identifier">tag1</span>)
+33:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-identifier">tag1</span>, <span class="ruby-identifier">tag2</span>], <span class="ruby-identifier">root</span>.<span class="ruby-identifier">children</span>)
+34:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-identifier">tag3</span>], <span class="ruby-identifier">tag1</span>.<span class="ruby-identifier">children</span>)
+35:     <span class="ruby-identifier">assert_equal</span>([], <span class="ruby-identifier">tag2</span>.<span class="ruby-identifier">children</span>)
+36:     <span class="ruby-identifier">attribute1</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Attribute</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;a1&quot;</span>, <span class="ruby-value">5</span>)
+37:     <span class="ruby-identifier">attribute2</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Attribute</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;a1&quot;</span>, <span class="ruby-value">6</span>)
+38:     <span class="ruby-identifier">attribute3</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Attribute</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;a1&quot;</span>, <span class="ruby-value">7</span>)
+39:     <span class="ruby-identifier">root</span>.<span class="ruby-identifier">add_attribute</span>(<span class="ruby-identifier">attribute1</span>)
+40:     <span class="ruby-identifier">root</span>.<span class="ruby-identifier">add_attribute</span>(<span class="ruby-identifier">attribute2</span>)
+41:     <span class="ruby-identifier">tag1</span>.<span class="ruby-identifier">add_attribute</span>(<span class="ruby-identifier">attribute3</span>)
+42:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-identifier">attribute1</span>, <span class="ruby-identifier">attribute2</span>], <span class="ruby-identifier">root</span>.<span class="ruby-identifier">attributes</span>)
+43:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-identifier">attribute3</span>], <span class="ruby-identifier">tag1</span>.<span class="ruby-identifier">attributes</span>)
+44:     <span class="ruby-identifier">assert_equal</span>([], <span class="ruby-identifier">tag2</span>.<span class="ruby-identifier">attributes</span>)
+45:     <span class="ruby-identifier">text</span> = <span class="ruby-constant">HTML_Parser</span><span class="ruby-operator">::</span><span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;abc&quot;</span>)
+46:     <span class="ruby-identifier">root</span>.<span class="ruby-identifier">add_child</span>(<span class="ruby-identifier">text</span>)
+47:     <span class="ruby-identifier">assert_equal</span>([<span class="ruby-identifier">tag1</span>, <span class="ruby-identifier">tag2</span>, <span class="ruby-identifier">text</span>], <span class="ruby-identifier">root</span>.<span class="ruby-identifier">children</span>)
+48:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

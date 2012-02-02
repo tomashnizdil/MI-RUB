@@ -1,0 +1,7 @@
+<html version="5">
+	<head><title> nadpis </head> </title>
+
+	<body>
+           text
+	</body> 
+</html>

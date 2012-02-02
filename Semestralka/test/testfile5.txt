@@ -1,0 +1,8 @@
+<html version="5">
+	<head><title> nadpis </title></head> 
+
+	<body background="pozadi.jpg">
+            <h1 align="doprava">text</h1>
+            <br />
+	</body> 
+</html>

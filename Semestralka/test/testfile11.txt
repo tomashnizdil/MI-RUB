@@ -1,0 +1,23 @@
+<html version="5">
+	<head><title> abs </title></head> 
+
+	<body text="#000000" background="nejakePozadi.jpg" link="#ff0000" alink="#00ff00" vlink="#0000ff">
+            <h1>ahoj svete </h1>
+            <br />
+	<img src="obrazek.gif" alt="popisObrazku" />
+	<table summary="popis tabulky" width="100" border="4" align="left"><caption>nadpis tabulky</caption>
+		<thead style="nejaka definice stylu">
+			<tr><th>sloupec1</th><th>sloupec2</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>data</td><td colspan="2"><b>tucne nic</b></td></tr>
+			<tr><td rowspan="4">dalsi <i>data</i></td><td></td></tr>
+		</tbody>
+	</table>
+	<form action="skriptFormulare.php">
+	<input type="password" value="xxx" name="password" />
+	<input type="submit" value="OK" />
+	</form>
+<p><u> jeste nejaky podtrzeny text</u></p>
+	</body> 
+</html>

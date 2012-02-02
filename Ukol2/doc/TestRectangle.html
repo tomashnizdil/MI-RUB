@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: TestRectangle</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/unit_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/unit_test.rb">test/unit_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-setup">#setup</a></li>
+					
+					<li><a href="#method-i-test_nacitani_hodnot">#test_nacitani_hodnot</a></li>
+					
+					<li><a href="#method-i-test_vypoctu">#test_vypoctu</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Rectangles.html">Rectangles</a></li>
+				
+					<li><a href="./Rectangles/Ctverec.html">Rectangles::Ctverec</a></li>
+				
+					<li><a href="./Float.html">Float</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+					<li><a href="./TestRectangle.html">TestRectangle</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">TestRectangle</h1>
+
+		<div id="description">
+			<p>
+Trida pro testovani ulohy <a href="Rectangles.html">Rectangles</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="setup-method" class="method-detail ">
+				<a name="method-i-setup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setup</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda setup, ktera slouzi jako prolog pred kazdym jednotlivym testem
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="setup-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 7</span>
+ 7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setup</span>
+ 8:     <span class="ruby-ivar">@ctverec1</span> = <span class="ruby-constant">Rectangles</span><span class="ruby-operator">::</span><span class="ruby-constant">Ctverec</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>)
+ 9:     <span class="ruby-ivar">@ctverec2</span> = <span class="ruby-constant">Rectangles</span><span class="ruby-operator">::</span><span class="ruby-constant">Ctverec</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>)
+10:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-nacitani-hodnot-method" class="method-detail ">
+				<a name="method-i-test_nacitani_hodnot"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_nacitani_hodnot</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test nacitani hodnot do jednotlivych atributu tridy Ctverec
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-nacitani-hodnot-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 13</span>
+13:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_nacitani_hodnot</span>
+14:     <span class="ruby-identifier">hrana</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span> = <span class="ruby-value">1.0</span>, <span class="ruby-value">2.0</span>, <span class="ruby-value">3.0</span>
+15:     <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-identifier">hrana</span>, <span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>])
+16:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">hrana</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">hrana</span> )
+17:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">y</span><span class="ruby-operator">-</span><span class="ruby-identifier">hrana</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">dolni</span> )
+18:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">y</span><span class="ruby-operator">+</span><span class="ruby-identifier">hrana</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">horni</span> )
+19:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">-</span><span class="ruby-identifier">hrana</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">leva</span> )
+20:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">+</span><span class="ruby-identifier">hrana</span><span class="ruby-operator">/</span><span class="ruby-value">2</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">prava</span> )
+21:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">hrana</span>*<span class="ruby-identifier">hrana</span>, <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">vypocti_obsah</span> )
+22:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="test-vypoctu-method" class="method-detail ">
+				<a name="method-i-test_vypoctu"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_vypoctu</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Test kompletnich vypoctu ulohy
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-vypoctu-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit_test.rb, line 25</span>
+25:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_vypoctu</span>
+26:     <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">4</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>])
+27:     <span class="ruby-ivar">@ctverec2</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">2</span>, <span class="ruby-value">2</span>, <span class="ruby-value">2</span>])
+28:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Obsah sjednoceni dvou ctvercu je 19.&quot;</span>, <span class="ruby-constant">Rectangles</span>.<span class="ruby-identifier">vypocti_sjednoceni</span>(<span class="ruby-ivar">@ctverec1</span>, <span class="ruby-ivar">@ctverec2</span>))
+29:     <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">4.0</span>, <span class="ruby-value">0.000</span>, <span class="ruby-value">0.000e-3</span>])
+30:     <span class="ruby-ivar">@ctverec2</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">2.0e+0</span>, <span class="ruby-value">2</span>, <span class="ruby-value">2e0</span>])
+31:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Obsah sjednoceni dvou ctvercu je 19.&quot;</span>, <span class="ruby-constant">Rectangles</span>.<span class="ruby-identifier">vypocti_sjednoceni</span>(<span class="ruby-ivar">@ctverec1</span>, <span class="ruby-ivar">@ctverec2</span>))
+32:     <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">5.23</span>, <span class="ruby-value">10e20</span>, <span class="ruby-value">3e-2</span>])
+33:     <span class="ruby-ivar">@ctverec2</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">4.345643225</span>, <span class="ruby-value">3e100</span>, <span class="ruby-value">1</span>])
+34:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Obsah sjednoceni dvou ctvercu je 49.99533665148841.&quot;</span>, <span class="ruby-constant">Rectangles</span>.<span class="ruby-identifier">vypocti_sjednoceni</span>(<span class="ruby-ivar">@ctverec1</span>, <span class="ruby-ivar">@ctverec2</span>))
+35:     <span class="ruby-ivar">@ctverec1</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">1</span>, <span class="ruby-value">10</span>, <span class="ruby-value">10</span>])
+36:     <span class="ruby-ivar">@ctverec2</span>.<span class="ruby-identifier">nacti_hodnoty</span>([<span class="ruby-value">2</span>, <span class="ruby-value">5</span>, <span class="ruby-value">5</span>])
+37:     <span class="ruby-identifier">assert_equal</span>(<span class="ruby-value str">&quot;Ctverce se ani nedotykaji.&quot;</span>, <span class="ruby-constant">Rectangles</span>.<span class="ruby-identifier">vypocti_sjednoceni</span>(<span class="ruby-ivar">@ctverec1</span>, <span class="ruby-ivar">@ctverec2</span>))
+38:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

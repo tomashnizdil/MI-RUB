@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: HTML_Parser::Parser</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/parser_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/parser.rb">lib/parser.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-create_attribute">#create_attribute</a></li>
+					
+					<li><a href="#method-i-create_tag">#create_tag</a></li>
+					
+					<li><a href="#method-i-create_text">#create_text</a></li>
+					
+					<li><a href="#method-i-eof%3F">#eof?</a></li>
+					
+					<li><a href="#method-i-parse">#parse</a></li>
+					
+					<li><a href="#method-i-parse_char">#parse_char</a></li>
+					
+					<li><a href="#method-i-readchar">#readchar</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="../lib/dictionary_txt.html">dictionary.txt</a></li>
+				
+					<li class="file"><a href="../nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+					<li class="file"><a href="../output_txt.html">output.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile1_txt.html">testfile1.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile10_txt.html">testfile10.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile11_txt.html">testfile11.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile2_txt.html">testfile2.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile3_txt.html">testfile3.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile4_txt.html">testfile4.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile5_txt.html">testfile5.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile6_txt.html">testfile6.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile7_txt.html">testfile7.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile8_txt.html">testfile8.txt</a></li>
+				
+					<li class="file"><a href="../test/testfile9_txt.html">testfile9.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../HTML_Parser.html">HTML_Parser</a></li>
+				
+					<li><a href="../HTML_Parser/DOM_Nodes.html">HTML_Parser::DOM_Nodes</a></li>
+				
+					<li><a href="../HTML_Parser/DOM_Nodes/Attribute.html">HTML_Parser::DOM_Nodes::Attribute</a></li>
+				
+					<li><a href="../HTML_Parser/DOM_Nodes/Tag.html">HTML_Parser::DOM_Nodes::Tag</a></li>
+				
+					<li><a href="../HTML_Parser/DOM_Nodes/Text.html">HTML_Parser::DOM_Nodes::Text</a></li>
+				
+					<li><a href="../HTML_Parser/Dictionary.html">HTML_Parser::Dictionary</a></li>
+				
+					<li><a href="../HTML_Parser/Parser.html">HTML_Parser::Parser</a></li>
+				
+					<li><a href="../HTML_Parser/Printer.html">HTML_Parser::Printer</a></li>
+				
+					<li><a href="../TestUnit.html">TestUnit</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">HTML_Parser::Parser</h1>
+
+		<div id="description">
+			<p>
+Hlavni trida modulu <a href="../HTML_Parser.html">HTML_Parser</a>, ktera
+provadi parsovani vstupu a jeho prevod na stromovou reprezentaci
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="START">START</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - pocatecni stav
+</p></dd>
+				
+			
+				<dt><a name="OPENING_TAG">OPENING_TAG</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - nacitani oteviraciho tagu
+</p></dd>
+				
+			
+				<dt><a name="CLOSING_TAG">CLOSING_TAG</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - nacitani zaviraciho tagu
+</p></dd>
+				
+			
+				<dt><a name="ATTRIBUTE_NAME">ATTRIBUTE_NAME</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - nacitani nazvu atributu
+</p></dd>
+				
+			
+				<dt><a name="ATTRIBUTE_VALUE">ATTRIBUTE_VALUE</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - nacitani hodnoty atributu
+</p></dd>
+				
+			
+				<dt><a name="DATA">DATA</a></dt>
+				
+				<dd class="description"><p>
+Konstanta reprezentujici stav parseru - nacitani textovych dat
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="root-attribute-method" class="method-detail">
+				<a name="root"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">root</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Koren stromove struktury (atribut pro cteni pro potreby testovani)
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(input, dictionary)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Konstruktor, ktery zajistuje otevreni souboru s analyzovanym html
+dokumentem a take vytvari novou instanci slovniku
+</p>
+<ul>
+<li><p>
+input - vstupni soubor k parsovani
+</p>
+</li>
+<li><p>
+dictionary - externi soubor s definici slovniku
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 25</span>
+25:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">input</span>, <span class="ruby-identifier">dictionary</span>)
+26:       <span class="ruby-ivar">@input</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">input</span>, <span class="ruby-value str">&quot;r&quot;</span>)
+27:       <span class="ruby-ivar">@dictionary</span> = <span class="ruby-constant">Dictionary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">dictionary</span>)
+28:       <span class="ruby-ivar">@stack</span> = []
+29:       <span class="ruby-ivar">@state</span> = <span class="ruby-value">0</span>
+30:       <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+31:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="create-attribute-method" class="method-detail ">
+				<a name="method-i-create_attribute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create_attribute</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro vytvareni uzlu tridy Attribute ve stromove strukture
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-attribute-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 85</span>
+85:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_attribute</span>
+86:       <span class="ruby-identifier">name</span> = <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">pop</span>
+87:       <span class="ruby-identifier">tag</span> = <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">name</span>.<span class="ruby-identifier">downcase</span>
+88:       <span class="ruby-identifier">downcase</span> = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">downcase</span>
+89:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">attributes</span>[<span class="ruby-identifier">tag</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">downcase</span>)
+90:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected attribute '#{name}' within '&lt;#{@stack.last.name}&gt;' context.&quot;</span>
+91:       <span class="ruby-keyword kw">end</span>
+92:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">values</span>[[<span class="ruby-identifier">tag</span>, <span class="ruby-identifier">downcase</span>]].<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">values</span>[[<span class="ruby-identifier">tag</span>, <span class="ruby-identifier">downcase</span>]].<span class="ruby-identifier">include?</span>(<span class="ruby-ivar">@data</span>.<span class="ruby-identifier">downcase</span>)
+93:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected value '#{@data}' of attribute '#{name}' within '&lt;#{@stack.last.name}&gt;' context.&quot;</span>
+94:       <span class="ruby-keyword kw">end</span>
+95:       <span class="ruby-identifier">attribute</span> = <span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Attribute</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>, <span class="ruby-ivar">@data</span>)
+96:       <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">add_attribute</span>(<span class="ruby-identifier">attribute</span>)
+97:       <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+98:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="create-tag-method" class="method-detail ">
+				<a name="method-i-create_tag"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create_tag</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro vytvareni uzlu tridy Tag ve stromove strukture
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-tag-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 64</span>
+64:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_tag</span>
+65:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">empty?</span>
+66:         <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@data</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;html&quot;</span>) <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@root</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+67:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected tag mark '&lt;#{@data}&gt;' within null context.&quot;</span>
+68:         <span class="ruby-keyword kw">end</span>
+69:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">tags</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-ivar">@data</span>.<span class="ruby-identifier">downcase</span>)
+70:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unknown tag mark '&lt;#{@data}&gt;' within '&lt;#{@stack.last.name}&gt;' context.&quot;</span>
+71:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">name</span>.<span class="ruby-identifier">downcase</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-ivar">@data</span>.<span class="ruby-identifier">downcase</span>)
+72:         <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected tag mark '&lt;#{@data}&gt;' within '&lt;#{@stack.last.name}&gt;' context.&quot;</span>
+73:       <span class="ruby-keyword kw">end</span>
+74:     
+75:       <span class="ruby-identifier">paired</span> = <span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-ivar">@data</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>
+76:       <span class="ruby-identifier">tag</span> = <span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Tag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@data</span>, <span class="ruby-identifier">paired</span>, <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>)
+77:       <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">tag</span>)
+78:       <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+79:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@root</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+80:         <span class="ruby-ivar">@root</span> = <span class="ruby-identifier">tag</span>
+81:       <span class="ruby-keyword kw">end</span>
+82:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="create-text-method" class="method-detail ">
+				<a name="method-i-create_text"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create_text</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro vytvareni textoveho uzlu ve stromove strukture
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-text-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/parser.rb, line 101</span>
+101:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_text</span>
+102:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@data</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot; &quot;</span>).<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;\t&quot;</span>).<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;\n&quot;</span>).<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;\r&quot;</span>).<span class="ruby-identifier">empty?</span> <span class="ruby-comment cmt"># data without white spaces</span>
+103:         <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">add_child</span>(<span class="ruby-constant">DOM_Nodes</span><span class="ruby-operator">::</span><span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@data</span>))
+104:       <span class="ruby-keyword kw">end</span>
+105:       <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+106:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="eof--method" class="method-detail ">
+				<a name="method-i-eof%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">eof?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro zjisteni, jestli je cteni vstupniho parsovaneho souboru u konce.
+Vytvorena hlavne pro potreby testovani.  Vraci priznak eof.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="eof--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 41</span>
+41:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">eof?</span>
+42:       <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">eof?</span>
+43:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-method" class="method-detail ">
+				<a name="method-i-parse"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda, ktera provadi vlastni parsovani vstupu.  Precte a zanalyzuje kazdy
+znak vstupniho souboru a nakonec vypise hlasku, zda je, nebo neni dobre
+utvoren, v pripade kladne odpovedi navic jeste vrati koren stromove
+struktury dokumentu.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="parse-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 47</span>
+47:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span>
+48:       <span class="ruby-keyword kw">while</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@input</span>.<span class="ruby-identifier">eof?</span>
+49:         <span class="ruby-keyword kw">begin</span>
+50:           <span class="ruby-identifier">parse_char</span>(<span class="ruby-identifier">readchar</span>)
+51:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+52:           <span class="ruby-identifier">puts</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">message</span>
+53:           <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Document is not well-formed.&quot;</span>
+54:           <span class="ruby-identifier">exit</span>
+55:         <span class="ruby-keyword kw">end</span>
+56:       <span class="ruby-keyword kw">end</span>
+57:     
+58:       <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Document is well-formed. \n\n&quot;</span>
+59:       <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">close</span>
+60:       <span class="ruby-ivar">@root</span>
+61:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-char-method" class="method-detail ">
+				<a name="method-i-parse_char"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_char</span><span
+						class="method-args">(char)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Hlavni metoda cele tridy, ktera pro precteny znak a aktualni stav parseru
+vyhodnoti dalsi pokracovani vypoctu.  Pri precteni nektereho z mnoziny
+pripustnych symbolu pro dany stav zpusobi zmenu stavu s ohledem na dalsi
+ocekavany znak, pripadne zavola metodu pro vytvoreni prislusneho uzlu. 
+Pokud dostane pro aktualni stav neocekavany znak, vyvola vyjimku, ktera se
+odchytava v metode parse.
+</p>
+<ul>
+<li><p>
+char - aktualni precteny znak
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="parse-char-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/parser.rb, line 112</span>
+112:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_char</span>(<span class="ruby-identifier">char</span>)
+113:       <span class="ruby-keyword kw">if</span> [<span class="ruby-value str">&quot;\t&quot;</span>, <span class="ruby-value str">&quot;\r&quot;</span>, <span class="ruby-value str">&quot;\n&quot;</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">char</span>)
+114:         <span class="ruby-keyword kw">return</span>
+115:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">START</span>
+116:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&lt;'</span>
+117:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">OPENING_TAG</span>
+118:         <span class="ruby-keyword kw">else</span>
+119:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected character '#{char}' while expecting '&lt;'.&quot;</span>
+120:         <span class="ruby-keyword kw">end</span>
+121:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">OPENING_TAG</span>
+122:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&gt;'</span>
+123:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+124:             <span class="ruby-identifier">create_tag</span>
+125:             <span class="ruby-keyword kw">if</span> (<span class="ruby-ivar">@dictionary</span>.<span class="ruby-identifier">tags</span>[<span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">name</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+126:               <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unclosed unpaired tag '&lt;#{@stack.last.name}&gt;'.&quot;</span>
+127:             <span class="ruby-keyword kw">end</span>
+128:           <span class="ruby-keyword kw">end</span>
+129:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">DATA</span>
+130:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'/'</span>
+131:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">CLOSING_TAG</span>
+132:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">' '</span>
+133:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+134:             <span class="ruby-identifier">create_tag</span>
+135:           <span class="ruby-keyword kw">end</span>
+136:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">ATTRIBUTE_NAME</span>
+137:         <span class="ruby-keyword kw">elsif</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'a'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'A'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'Z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'0'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'9'</span>)
+138:           <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+139:         <span class="ruby-keyword kw">else</span>
+140:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected character '#{char}' in opening tag mark near '#{@data}'.&quot;</span>
+141:         <span class="ruby-keyword kw">end</span>
+142:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">CLOSING_TAG</span>
+143:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&gt;'</span>
+144:           <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@data</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">pop</span>.<span class="ruby-identifier">name</span>)
+145:             <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Bad tag pairing near '&lt;/#{@data}&gt;'.&quot;</span>
+146:           <span class="ruby-keyword kw">end</span>
+147:           <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+148:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">DATA</span>
+149:         <span class="ruby-keyword kw">elsif</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'a'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'A'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'Z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'0'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'9'</span>)
+150:           <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+151:         <span class="ruby-keyword kw">else</span>
+152:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected character '#{char}' in closing tag mark near '#{@data}'.&quot;</span>
+153:         <span class="ruby-keyword kw">end</span>
+154:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">ATTRIBUTE_NAME</span>
+155:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'/'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">empty?</span>
+156:           <span class="ruby-ivar">@data</span> = <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">name</span>
+157:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">CLOSING_TAG</span>
+158:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'='</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@data</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@input</span>.<span class="ruby-identifier">eof?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">readchar</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&quot;'</span>
+159:           <span class="ruby-ivar">@stack</span>.<span class="ruby-identifier">push</span>(<span class="ruby-ivar">@data</span>)
+160:           <span class="ruby-ivar">@data</span> = <span class="ruby-value str">&quot;&quot;</span>
+161:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">ATTRIBUTE_VALUE</span>
+162:         <span class="ruby-keyword kw">elsif</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'a'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'A'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'Z'</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">char</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value str">'0'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value str">'9'</span>)
+163:           <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+164:         <span class="ruby-keyword kw">else</span>
+165:           <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;Unexpected character '#{char}' in attribute name near '#{@data}'.&quot;</span>
+166:         <span class="ruby-keyword kw">end</span>
+167:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">ATTRIBUTE_VALUE</span>
+168:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&quot;'</span>
+169:           <span class="ruby-identifier">create_attribute</span>
+170:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">OPENING_TAG</span>
+171:         <span class="ruby-keyword kw">else</span>
+172:           <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+173:         <span class="ruby-keyword kw">end</span>
+174:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@state</span> <span class="ruby-operator">==</span> <span class="ruby-constant">DATA</span>
+175:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&lt;'</span>
+176:           <span class="ruby-identifier">create_text</span>
+177:           <span class="ruby-ivar">@state</span> = <span class="ruby-constant">OPENING_TAG</span>
+178:         <span class="ruby-keyword kw">else</span>
+179:           <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+180:         <span class="ruby-keyword kw">end</span>
+181:       <span class="ruby-keyword kw">end</span>
+182:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="readchar-method" class="method-detail ">
+				<a name="method-i-readchar"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">readchar</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Metoda pro cteni znaku ze vstupniho parsovaneho souboru. Vytvorena hlavne
+pro potreby testovani.  Vraci precteny znak.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="readchar-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/parser.rb, line 35</span>
+35:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">readchar</span>
+36:       <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">readchar</span>
+37:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

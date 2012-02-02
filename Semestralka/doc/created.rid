@@ -1,0 +1,24 @@
+Thu, 02 Feb 2012 23:45:56 +0100
+./lib/dictionary.rb	Thu, 02 Feb 2012 22:05:16 +0100
+./lib/dictionary.txt	Thu, 02 Feb 2012 23:11:16 +0100
+./lib/dom_nodes.rb	Thu, 02 Feb 2012 21:47:51 +0100
+./lib/main.rb	Thu, 02 Feb 2012 22:47:52 +0100
+./lib/parser.rb	Thu, 02 Feb 2012 23:43:10 +0100
+./lib/printer.rb	Thu, 02 Feb 2012 23:07:02 +0100
+./LICENSE	Thu, 02 Feb 2012 15:54:27 +0100
+./nbproject/private/rake-d.txt	Thu, 02 Feb 2012 22:53:59 +0100
+./output.txt	Fri, 20 Jan 2012 12:12:18 +0100
+./Rakefile	Thu, 02 Feb 2012 15:54:27 +0100
+./README	Thu, 02 Feb 2012 15:54:27 +0100
+./test/testfile1.txt	Thu, 02 Feb 2012 23:37:06 +0100
+./test/testfile10.txt	Thu, 02 Feb 2012 23:31:03 +0100
+./test/testfile11.txt	Thu, 02 Feb 2012 23:15:09 +0100
+./test/testfile2.txt	Thu, 02 Feb 2012 23:21:23 +0100
+./test/testfile3.txt	Thu, 02 Feb 2012 23:22:29 +0100
+./test/testfile4.txt	Thu, 02 Feb 2012 23:23:45 +0100
+./test/testfile5.txt	Thu, 02 Feb 2012 23:25:08 +0100
+./test/testfile6.txt	Thu, 02 Feb 2012 23:41:02 +0100
+./test/testfile7.txt	Thu, 02 Feb 2012 23:26:56 +0100
+./test/testfile8.txt	Thu, 02 Feb 2012 23:28:40 +0100
+./test/testfile9.txt	Thu, 02 Feb 2012 23:29:34 +0100
+./test/unit_test.rb	Thu, 02 Feb 2012 23:45:20 +0100
